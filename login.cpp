@@ -3,6 +3,7 @@
 #include <QString>
 #include <QMessageBox>
 #include "usuario.h"
+#include "ingenieria.h"
 
 using namespace std;
 
@@ -31,7 +32,8 @@ void Login::on_Boton_Login_clicked()
     pass = ui->LE_Password->text();
     if (ing.acceder(user,pass)){
         //AQUI SE ABRE LA VENTANA DE INGENIERO!!!!!
-
+        ingenieria obj1;
+        obj1.exec();
     }
     else if (adm.acceder(user,pass)){
         //AQUI SE ABRE LA VENTANA DE ADMINISTRADOR!!!!
