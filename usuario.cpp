@@ -19,6 +19,15 @@ Ingeniero::~Ingeniero(){ //Destructor
 
 }
 
+bool Ingeniero::acceder(QString user,QString pass){
+    if (user == usuario && pass == password){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
 //Métodos de la clase Administrador
 Admin::Admin(){ //Constructor
 
@@ -26,4 +35,13 @@ Admin::Admin(){ //Constructor
 
 Admin::~Admin(){ //Destructor
 
+}
+
+bool Admin::acceder(QString user,QString pass){
+    if (user == usuario && pass == password){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
