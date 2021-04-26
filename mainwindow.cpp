@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "login.h"
+#include "usuario.h"
 
 Ingeniero ing;
 Admin adm;
