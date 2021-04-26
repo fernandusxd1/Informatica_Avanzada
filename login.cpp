@@ -31,11 +31,11 @@ void Login::on_Boton_Login_clicked()
     pass = ui->LE_Password->text();
     if (ing.acceder(user,pass)){
         //AQUI SE ABRE LA VENTANA DE INGENIERO!!!!!
-        QMessageBox::information(this, "Aviso", "Correcto");
+
     }
     else if (adm.acceder(user,pass)){
         //AQUI SE ABRE LA VENTANA DE ADMINISTRADOR!!!!
-        QMessageBox::information(this, "Aviso", "Correcto");
+
     }
     else{
         QMessageBox::information(this, "Aviso", "Usuario o contraseña incorrectos.");
