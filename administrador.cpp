@@ -1,5 +1,8 @@
 #include "administrador.h"
 #include "ui_administrador.h"
+#include "usuario.h"
+
+extern Admin adm;
 
 Administrador::Administrador(QWidget *parent) :
     QDialog(parent),
@@ -15,5 +18,5 @@ Administrador::~Administrador()
 
 void Administrador::on_pushButton_clicked()
 {
-
+    ui->fechas->setText(adm.mostrar_contop());
 }

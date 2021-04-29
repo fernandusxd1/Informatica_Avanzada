@@ -54,7 +54,7 @@ QString Admin::mostrar_contop(){ //Mostrar
     QString datos="";
     map<QString,QString>::iterator i;
     for(i=c_op.begin();i!=c_op.end();i++){
-        datos=datos + i->first + "\t" + i->second + "\n";
+        datos=datos + i->first + "    " + i->second + "\n";
     }
     return datos;
 }

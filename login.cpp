@@ -3,6 +3,7 @@
 #include <QString>
 #include <QMessageBox>
 #include "usuario.h"
+#include "administrador.h"
 
 using namespace std;
 
@@ -38,8 +39,8 @@ void Login::on_Boton_Login_clicked()
 
         }
         else if (adm.acceder(user,pass)){
-            //AQUI SE ABRE LA VENTANA DE ADMINISTRADOR!!!!
-
+            Administrador A;
+            A.exec();
         }
         else{
             QMessageBox::information(this, "Aviso", "Usuario o contraseña incorrectos.");
