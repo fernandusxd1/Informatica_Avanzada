@@ -1,17 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Administrador</class>
- <widget name="Administrador" class="QDialog">
+ <widget class="QDialog" name="Administrador">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>359</width>
+    <height>219</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>160</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mostrar accesos</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="fechas">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>181</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

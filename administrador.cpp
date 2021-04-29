@@ -12,3 +12,8 @@ Administrador::~Administrador()
 {
     delete ui;
 }
+
+void Administrador::on_pushButton_clicked()
+{
+
+}

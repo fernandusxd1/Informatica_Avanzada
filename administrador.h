@@ -15,6 +15,10 @@ public:
     explicit Administrador(QWidget *parent = nullptr);
     ~Administrador();
 
+private slots:
+
+    void on_pushButton_clicked();
+
 private:
     Ui::Administrador *ui;
 };
