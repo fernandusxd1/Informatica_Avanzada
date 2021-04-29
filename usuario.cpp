@@ -19,6 +19,10 @@ Ingeniero::~Ingeniero(){ //Destructor
 
 }
 
+float Ingeniero::media(){
+
+}
+
 bool Ingeniero::acceder(QString user,QString pass){
     if (user == usuario && pass == password){
         return true;
