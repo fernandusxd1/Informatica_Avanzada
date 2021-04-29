@@ -18,7 +18,6 @@ class Ingeniero{
     QString usuario="Ingeniero";
     QString password="ing1234";
     public:
-
     Ingeniero();
     ~Ingeniero();
     bool acceder(QString,QString);

@@ -20,7 +20,15 @@ Ingeniero::~Ingeniero(){ //Destructor
 }
 
 float Ingeniero::media(){
-
+    int i;
+    int suma=0,tamano=0;
+    float med;
+    for (i=0;i<=dataIng.head();i++){
+        suma=suma+dataIng[i];
+        tamano=tamano+1;
+    }
+    med=suma/tamano;
+    return med;
 }
 
 bool Ingeniero::acceder(QString user,QString pass){
