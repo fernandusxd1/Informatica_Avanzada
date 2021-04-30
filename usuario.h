@@ -1,7 +1,7 @@
 #ifndef USUARIO_H
 #define USUARIO_H
 #include <QString>
-#include <map>
+#include <list>
 
 using namespace std;
 
@@ -16,27 +16,29 @@ class Operario{
 
 //Clase Ingeniero
 class Ingeniero{
-    private:
-    QString usuario="Ingeniero";
-    QString password="ing1234";
+    protected:
+    QString usuario;
+    QString password;
     public:
     Ingeniero();
     ~Ingeniero();
     bool acceder(QString,QString);
+    friend class Admin;
 };
 
 //Clase Administrador
 class Admin{
     private:
-    QString usuario="Admin";
-    QString password="adm1234";
-    map<QString,QString> c_op;
+    QString usuario;
+    QString password;
+    list<QString> c_op;
     public:
     Admin();
     ~Admin();
     bool acceder(QString,QString);
     void insert_contop(QString,QString);
     QString mostrar_contop();
+    void change_pass(QString,bool,Ingeniero&);
 };
 
 #endif // USUARIO_H

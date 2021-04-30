@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     administrador.cpp \
+    c_pass.cpp \
     login.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -17,12 +18,14 @@ SOURCES += \
 
 HEADERS += \
     administrador.h \
+    c_pass.h \
     login.h \
     mainwindow.h \
     usuario.h \
 
 FORMS += \
     administrador.ui \
+    c_pass.ui \
     login.ui \
     mainwindow.ui \
 
