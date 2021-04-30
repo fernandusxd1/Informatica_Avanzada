@@ -46,6 +46,7 @@ bool Admin::acceder(QString user,QString pass){
 }
 
 void Admin::insert_contop(QString nombre, QString fecha){ //Insertar
+    c_op.erase(nombre);
     c_op.insert(make_pair(nombre,fecha));
 }
 

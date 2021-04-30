@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>359</width>
-    <height>219</height>
+    <width>434</width>
+    <height>289</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,10 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>160</y>
-     <width>101</width>
-     <height>21</height>
+     <x>160</x>
+     <y>230</y>
+     <width>111</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -30,13 +30,31 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>40</y>
-     <width>301</width>
-     <height>111</height>
+     <y>50</y>
+     <width>351</width>
+     <height>171</height>
     </rect>
    </property>
    <property name="readOnly">
     <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>231</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Control de accesos de operarios</string>
    </property>
   </widget>
  </widget>

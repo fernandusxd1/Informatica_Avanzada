@@ -36,11 +36,12 @@ void Login::on_Boton_Login_clicked()
         QString pass = ui->LE_Password->text();
         if (ing.acceder(user,pass)){
             //AQUI SE ABRE LA VENTANA DE INGENIERO!!!!!
-
+            close();
         }
         else if (adm.acceder(user,pass)){
             Administrador A;
             A.exec();
+            close();
         }
         else{
             QMessageBox::information(this, "Aviso", "Usuario o contraseña incorrectos.");
@@ -56,6 +57,7 @@ void Login::on_Boton_Login_clicked()
         QString fecha = QString::fromStdString(str_time);
         QString nombre = ui->LE_User->text();
         adm.insert_contop(nombre,fecha);
+        close();
     }
 }
 
