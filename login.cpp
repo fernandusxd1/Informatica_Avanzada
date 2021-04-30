@@ -4,11 +4,13 @@
 #include <QMessageBox>
 #include "usuario.h"
 #include "ingenieria.h"
+#include <QQueue>
 
 using namespace std;
 
 extern Ingeniero ing;
 extern Admin adm;
+extern QQueue dataIng;
 
 Login::Login(QWidget *parent) :
     QDialog(parent),
