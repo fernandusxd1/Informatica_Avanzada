@@ -1,6 +1,6 @@
 #include "usuario.h"
 
-
+extern QQueue<float> dataIng;
 //Métodos de la clase Operario
 Operario::Operario(){ //Constructor
 

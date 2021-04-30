@@ -6,7 +6,7 @@
 
 Ingeniero ing;
 Admin adm;
-QQueue dataIng;
+QQueue<float> dataIng;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

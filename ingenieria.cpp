@@ -3,6 +3,8 @@
 #include <QString>
 #include <QMessageBox>
 
+extern QQueue<float> dataIng;
+
 ingenieria::ingenieria(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ingenieria)
