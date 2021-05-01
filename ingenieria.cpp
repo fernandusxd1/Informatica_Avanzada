@@ -27,14 +27,24 @@ void ingenieria::on_commandLinkButton_clicked()
 
 void ingenieria::on_pushButton_2_clicked()
 {
-    float cont=ing.media();
-    ui->lineEdit_2->setText(QString::number(cont));
+    if (dataIng.size()==0){
+         QMessageBox::information(this,"Aviso","No se puede realizar esta operacion");
+    }else{
+        float cont=ing.media();
+        ui->lineEdit_2->setText(QString::number(cont));
+    }
+
+
 }
 
 void ingenieria::on_pushButton_3_clicked()
 {
+    if (dataIng.size()==0){
+         QMessageBox::information(this,"Aviso","No se puede realizar esta operacion");
+    }else{
     float cont=ing.varianza();
     ui->lineEdit_3->setText(QString::number(cont));
+    }
 }
 
 void ingenieria::on_pushButton_clicked()
@@ -52,4 +62,9 @@ void ingenieria::on_pushButton_clicked()
 void ingenieria::on_pushButton_4_clicked()
 {
     ui->datos->setText(ing.show_data());
+}
+
+void ingenieria::on_pushButton_5_clicked()
+{
+    dataIng.clear();
 }
