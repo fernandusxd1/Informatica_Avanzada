@@ -36,3 +36,15 @@ void ingenieria::on_pushButton_3_clicked()
     float cont=ing.varianza();
     ui->lineEdit_3->setText(QString::number(cont));
 }
+
+void ingenieria::on_pushButton_clicked()
+{
+    if(ui->lineEdit->text()==""){
+        QMessageBox::information(this,"Aviso","No ha insertado un valor");
+    }else{
+        QString numero=ui->lineEdit->text();
+        float num=numero.toFloat();
+        dataIng.push_back(num);
+        ui->lineEdit->setText("");
+    }
+}
