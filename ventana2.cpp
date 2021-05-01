@@ -2,6 +2,7 @@
 #include "ui_ventana2.h"
 #include <QThread>
 
+
 Ventana2::Ventana2(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Ventana2)

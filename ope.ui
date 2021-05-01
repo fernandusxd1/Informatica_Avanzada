@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="digitCount">
-    <number>3</number>
+    <number>6</number>
    </property>
    <property name="segmentStyle">
     <enum>QLCDNumber::Flat</enum>
@@ -32,11 +32,14 @@
   <widget class="QLCDNumber" name="lcdNumber_2">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>290</x>
      <y>110</y>
      <width>91</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="digitCount">
+    <number>6</number>
    </property>
    <property name="segmentStyle">
     <enum>QLCDNumber::Flat</enum>
@@ -64,7 +67,7 @@
   <widget class="QSpinBox" name="spinBox_2">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>290</x>
      <y>50</y>
      <width>91</width>
      <height>31</height>
@@ -90,9 +93,9 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>240</x>
      <y>20</y>
-     <width>121</width>
+     <width>151</width>
      <height>21</height>
     </rect>
    </property>
@@ -116,7 +119,7 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>220</x>
+     <x>270</x>
      <y>90</y>
      <width>121</width>
      <height>21</height>
@@ -129,27 +132,53 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>190</y>
-     <width>121</width>
+     <x>10</x>
+     <y>200</y>
+     <width>131</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Comprobar errores</string>
+    <string>COMPROBAR ERRORES</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>190</y>
-     <width>101</width>
+     <x>10</x>
+     <y>230</y>
+     <width>131</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>GUARDAR DATOS</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>100</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Actualizar </string>
    </property>
   </widget>
  </widget>
