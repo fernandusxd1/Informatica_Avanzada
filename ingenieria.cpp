@@ -48,3 +48,8 @@ void ingenieria::on_pushButton_clicked()
         ui->lineEdit->setText("");
     }
 }
+
+void ingenieria::on_pushButton_4_clicked()
+{
+    ui->datos->setText(ing.show_data());
+}
