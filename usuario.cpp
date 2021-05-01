@@ -51,6 +51,17 @@ float Ingeniero::varianza(){
     return var;
 }
 
+QString Ingeniero::show_data(){
+    QString mostrar="";
+    QVector<float>::iterator i;
+    for(i=dataIng.begin();i!=dataIng.end();i++){
+        QString numero=QString::number(*i);
+        mostrar=mostrar + numero + "\n";
+    }
+    return mostrar;
+}
+
+
 bool Ingeniero::acceder(QString user,QString pass){
     if (user == usuario && pass == password){
         return true;
