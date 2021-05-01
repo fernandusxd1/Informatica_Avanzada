@@ -22,6 +22,7 @@ class Ingeniero{
     ~Ingeniero();
     bool acceder(QString,QString);
     float media();
+    float varianza();
 };
 
 //Clase Administrador

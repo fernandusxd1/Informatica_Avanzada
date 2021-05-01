@@ -10,7 +10,7 @@ using namespace std;
 
 extern Ingeniero ing;
 extern Admin adm;
-extern QQueue dataIng;
+extern QVector<float> dataIng;
 
 Login::Login(QWidget *parent) :
     QDialog(parent),

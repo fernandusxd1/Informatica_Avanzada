@@ -6,16 +6,16 @@
 
 Ingeniero ing;
 Admin adm;
-QQueue<float> dataIng;
+QVector<float> dataIng;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    dataIng.enqueue(100);
-    dataIng.enqueue(35);
-    dataIng.enqueue(12);
-    dataIng.enqueue(200);
+    dataIng.push_back(90);
+    dataIng.push_back(81);
+    dataIng.push_back(76);
+    dataIng.push_back(98);
     ui->setupUi(this);
 }
 
