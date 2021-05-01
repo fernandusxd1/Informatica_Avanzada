@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "login.h"
 #include "usuario.h"
+#include "ope.h"
 
 Ingeniero ing;
 Admin adm;
@@ -20,6 +21,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Boton_op_clicked() //Botón para entrar como operario
 {
+//Cuando le de al boton de operario quiero que se me abra mi ventana
+    Ope obj;
+    obj.exec();
 
 }
 

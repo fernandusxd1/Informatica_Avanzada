@@ -12,16 +12,25 @@ SOURCES += \
     login.cpp \
     main.cpp \
     mainwindow.cpp \
+    ope.cpp \
     usuario.cpp \
+    ventana1.cpp \
+    ventana2.cpp
 
 HEADERS += \
     login.h \
     mainwindow.h \
+    ope.h \
     usuario.h \
+    ventana1.h \
+    ventana2.h
 
 FORMS += \
     login.ui \
     mainwindow.ui \
+    ope.ui \
+    ventana1.ui \
+    ventana2.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
