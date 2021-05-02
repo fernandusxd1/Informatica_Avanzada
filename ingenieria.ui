@@ -10,17 +10,28 @@
     <height>535</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Verdana</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Ingeniero</string>
   </property>
   <widget class="QCommandLinkButton" name="commandLinkButton">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>410</y>
-     <width>187</width>
+     <x>580</x>
+     <y>470</y>
+     <width>161</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>Salir</string>
@@ -35,6 +46,11 @@
      <height>22</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
@@ -44,6 +60,11 @@
      <width>113</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
@@ -55,15 +76,25 @@
      <height>22</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>420</x>
      <y>110</y>
-     <width>71</width>
-     <height>16</height>
+     <width>81</width>
+     <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
    </property>
    <property name="text">
     <string>Añadir dato:</string>
@@ -78,6 +109,11 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
    <property name="text">
     <string>Media:</string>
    </property>
@@ -90,6 +126,11 @@
      <width>55</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
    </property>
    <property name="text">
     <string>Varianza:</string>
@@ -147,11 +188,16 @@
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>420</y>
+     <x>170</x>
+     <y>460</y>
      <width>93</width>
-     <height>28</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
    </property>
    <property name="text">
     <string>Mostrar</string>
@@ -160,11 +206,16 @@
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>280</x>
      <y>460</y>
      <width>101</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
    </property>
    <property name="text">
     <string>Restablecer</string>

@@ -10,8 +10,13 @@
     <height>159</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Verdana</family>
+   </font>
+  </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Finalizar proceso</string>
   </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
@@ -21,6 +26,11 @@
      <width>80</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
    </property>
    <property name="text">
     <string>Aceptar</string>
@@ -34,6 +44,11 @@
      <width>121</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
    </property>
    <property name="text">
     <string>Clave de parada:</string>

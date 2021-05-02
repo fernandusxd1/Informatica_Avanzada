@@ -18,6 +18,8 @@ Ope::Ope(QWidget *parent) :
     //inicializa los display a valores estandar de presion y temperatura.
     ui->lcdNumber->display(3);
     ui->lcdNumber_2->display(21);
+    ui->pushButton_4->setStyleSheet("background-color: red;border-style: outset;border-width: 4px;");
+
 }
 
 Ope::~Ope()

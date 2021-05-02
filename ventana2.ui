@@ -10,8 +10,13 @@
     <height>300</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Verdana</family>
+   </font>
+  </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Guardar datos</string>
   </property>
   <widget class="QProgressBar" name="progressBar">
    <property name="geometry">

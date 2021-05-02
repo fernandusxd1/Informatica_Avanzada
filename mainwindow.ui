@@ -23,6 +23,11 @@
       <height>61</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+     </font>
+    </property>
     <property name="text">
      <string>Entrar como
  operario</string>
@@ -36,6 +41,11 @@
       <width>121</width>
       <height>61</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+     </font>
     </property>
     <property name="text">
      <string>Entrar como

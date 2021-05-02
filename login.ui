@@ -10,8 +10,13 @@
     <height>194</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Verdana</family>
+   </font>
+  </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Inicio de sesión</string>
   </property>
   <widget class="QLineEdit" name="LE_Password">
    <property name="geometry">
@@ -50,6 +55,7 @@
    </property>
    <property name="font">
     <font>
+     <family>Verdana</family>
      <pointsize>10</pointsize>
     </font>
    </property>
@@ -62,12 +68,13 @@
     <rect>
      <x>50</x>
      <y>30</y>
-     <width>51</width>
+     <width>71</width>
      <height>16</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Verdana</family>
      <pointsize>10</pointsize>
     </font>
    </property>
@@ -83,6 +90,11 @@
      <width>81</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
    </property>
    <property name="text">
     <string>Entrar</string>
