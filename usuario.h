@@ -14,9 +14,9 @@ class Operario{
 
 };
 
-//Clase Ingeniero
-class Ingeniero{
-    protected:
+//Clase Ingeniero, que hereda de Operario
+class Ingeniero : public Operario{
+    private:
     QString usuario;
     QString password;
     public:
