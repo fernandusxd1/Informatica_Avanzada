@@ -62,8 +62,8 @@
     <rect>
      <x>50</x>
      <y>30</y>
-     <width>47</width>
-     <height>13</height>
+     <width>51</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="font">
@@ -72,7 +72,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Usuario:</string>
+    <string>Nombre:</string>
    </property>
   </widget>
   <widget class="QPushButton" name="Boton_Login">
@@ -85,7 +85,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Iniciar sesión</string>
+    <string>Entrar</string>
    </property>
   </widget>
   <widget class="QPushButton" name="Boton_Cancel">

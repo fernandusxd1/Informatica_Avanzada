@@ -5,6 +5,8 @@
 
 Ingeniero ing;
 Admin adm;
+int aux_op_ing=0;
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -20,11 +22,14 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_Boton_op_clicked() //Botón para entrar como operario
 {
-
+    aux_op_ing=0;
+    Login obj;
+    obj.exec();
 }
 
 void MainWindow::on_Boton_ing_adm_clicked() //Botón para entrar como ingeniero o administrador
 {
+    aux_op_ing=1;
     Login obj;
     obj.exec();
 }
