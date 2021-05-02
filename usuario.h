@@ -1,6 +1,7 @@
 #ifndef USUARIO_H
 #define USUARIO_H
 #include <QString>
+#include <QQueue>
 #include <list>
 
 using namespace std;
@@ -23,6 +24,9 @@ class Ingeniero : public Operario{
     Ingeniero();
     ~Ingeniero();
     bool acceder(QString,QString);
+    float media();
+    float varianza();
+    QString show_data();
     friend class Admin;
 };
 

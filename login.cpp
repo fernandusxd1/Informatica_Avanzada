@@ -3,12 +3,15 @@
 #include <QString>
 #include <QMessageBox>
 #include "usuario.h"
+#include "ingenieria.h"
+#include <QQueue>
 #include "administrador.h"
 
 using namespace std;
 
 extern Ingeniero ing;
 extern Admin adm;
+extern QVector<float> dataIng;
 extern int aux_op_ing;
 
 Login::Login(QWidget *parent) :
@@ -34,11 +37,12 @@ void Login::on_Boton_Login_clicked()
     if(aux_op_ing==1){ //Para ingeniero y administrador
         QString user = ui->LE_User->text();
         QString pass = ui->LE_Password->text();
-        if (ing.acceder(user,pass)){
-            //AQUI SE ABRE LA VENTANA DE INGENIERO!!!!!
+        if (ing.acceder(user,pass)){ // Ventana de ingeniero
+            ingenieria obj1;
+            obj1.exec();
             close();
         }
-        else if (adm.acceder(user,pass)){
+        else if (adm.acceder(user,pass)){ // Ventana de administrador
             Administrador A;
             A.exec();
             close();
@@ -46,9 +50,8 @@ void Login::on_Boton_Login_clicked()
         else{
             QMessageBox::information(this, "Aviso", "Usuario o contraseña incorrectos.");
         }
-
     }
-    else{ //Para operario
+    else{ // Ventana de operario
         time_t tiempo = time(0);
         struct tm *tlocal = localtime(&tiempo);
         char str_time[128];

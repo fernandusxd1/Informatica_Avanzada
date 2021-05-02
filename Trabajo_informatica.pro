@@ -9,6 +9,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    ingenieria.cpp \
     administrador.cpp \
     c_pass.cpp \
     login.cpp \
@@ -17,6 +18,7 @@ SOURCES += \
     usuario.cpp \
 
 HEADERS += \
+    ingenieria.h \
     administrador.h \
     c_pass.h \
     login.h \
@@ -24,6 +26,7 @@ HEADERS += \
     usuario.h \
 
 FORMS += \
+    ingenieria.ui \
     administrador.ui \
     c_pass.ui \
     login.ui \
