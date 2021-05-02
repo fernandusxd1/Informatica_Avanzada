@@ -55,11 +55,14 @@
      <pointsize>7</pointsize>
     </font>
    </property>
+   <property name="smallDecimalPoint">
+    <bool>false</bool>
+   </property>
    <property name="digitCount">
     <number>7</number>
    </property>
    <property name="mode">
-    <enum>QLCDNumber::Bin</enum>
+    <enum>QLCDNumber::Dec</enum>
    </property>
    <property name="segmentStyle">
     <enum>QLCDNumber::Flat</enum>

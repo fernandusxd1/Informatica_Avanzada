@@ -19,8 +19,8 @@ Ope::Ope(QWidget *parent) :
     //Aqui en el constructo, puedo poner los ajustes que quiera justo antes de que se abra
     //ui->pushButton->adjustSize();
     //Inicializa los display a valores estandar de presion y temperatura.
-    ui->lcdNumber->display(2.957);
-    ui->lcdNumber_2->display(20.886);
+    ui->lcdNumber->display(3);
+    ui->lcdNumber_2->display(21);
     ui->pushButton_4->setStyleSheet("background-color: red;border-style: outset;border-width: 4px;");
 
 }
