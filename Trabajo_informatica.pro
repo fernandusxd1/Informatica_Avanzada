@@ -16,6 +16,10 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     usuario.cpp \
+    claveop.cpp \
+    ope.cpp \
+    ventana1.cpp \
+    ventana2.cpp \
 
 HEADERS += \
     ingenieria.h \
@@ -24,6 +28,10 @@ HEADERS += \
     login.h \
     mainwindow.h \
     usuario.h \
+    claveop.h \
+    ope.h \
+    ventana1.h \
+    ventana2.h \
 
 FORMS += \
     ingenieria.ui \
@@ -31,6 +39,10 @@ FORMS += \
     c_pass.ui \
     login.ui \
     mainwindow.ui \
+    claveop.ui \
+    ope.ui \
+    ventana1.ui \
+    ventana2.ui \
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

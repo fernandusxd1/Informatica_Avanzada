@@ -15,8 +15,18 @@ class Operario{
 
 };
 
-//Clase Ingeniero, que hereda de Operario
-class Ingeniero : public Operario{
+// Clase Operario Jefe, que hereda de Operario
+class OperarioJefe : public Operario{
+    private:
+    QString clave;
+    public:
+    OperarioJefe();
+    ~OperarioJefe();
+    bool acceder(QString);
+};
+
+//Clase Ingeniero, que hereda de Operario jefe
+class Ingeniero : public OperarioJefe{
     private:
     QString usuario;
     QString password;

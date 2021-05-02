@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "login.h"
 #include "usuario.h"
+#include "ope.h"
 #include <QQueue>
 
 Ingeniero ing;

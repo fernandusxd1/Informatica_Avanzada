@@ -12,6 +12,24 @@ Operario::~Operario(){ //Destructor
 
 }
 
+//Métodos de la clase Operario Jefe
+OperarioJefe::OperarioJefe(){ //Constructor
+    clave="1234";
+}
+
+OperarioJefe::~OperarioJefe(){ //Destructor
+
+}
+
+bool OperarioJefe::acceder(QString _clave){
+    if (clave==_clave){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
 //Métodos de la clase Ingeniero
 Ingeniero::Ingeniero(){ //Constructor
     usuario="Ingeniero";
