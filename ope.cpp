@@ -2,6 +2,7 @@
 #include "ui_ope.h"
 #include "ventana1.h"
 #include "ventana2.h"
+#include "claveop.h"
 #include <cstdlib>
 
 int Global=3;
@@ -82,3 +83,9 @@ void Ope::on_pushButton_3_clicked()
         ui->lcdNumber_2->display(resultado1);
 }
 
+void Ope::on_pushButton_4_clicked()
+{
+    claveOp l;
+    l.exec();
+
+}

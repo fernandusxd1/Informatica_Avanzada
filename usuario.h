@@ -11,8 +11,17 @@ class Operario{
 
 };
 
+class OperarioJefe : public Operario{
+    private:
+    QString clave;
+    public:
+    OperarioJefe();
+    ~OperarioJefe();
+    bool acceder(QString);
+};
+
 //Clase Ingeniero
-class Ingeniero{
+class Ingeniero : public OperarioJefe{
     private:
     QString usuario="Ingeniero";
     QString password="ing1234";
