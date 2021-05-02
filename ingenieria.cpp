@@ -68,28 +68,27 @@ void ingenieria::on_pushButton_3_clicked()
 
 void ingenieria::on_pushButton_clicked()
 {
-    int i=0;
     if(ui->lineEdit->text()==""){
         QMessageBox::information(this,"Aviso","No ha insertado un valor");
     }else{
         QString numero=ui->lineEdit->text();
-        //string num_aux = numero.toStdString();
-
-        for(i=0;i<numero.length();i++){
-            if(numero==","){
-                numero.replace(i,1,".");
-                numero[i] = ".";
-            }
-        }
-        float num=numero.toFloat();
-        if(ui->radioButton->isChecked()){
-            dataIng.push_back(num);
-            ui->lineEdit->setText("");
+        if(numero.contains(",", Qt::CaseInsensitive) ){
+            QMessageBox::information(this,"Aviso","Los valores deben ser insertados con puntos");
         }
         else{
-            dataPre.push_back(num);
-            ui->lineEdit->setText("");
+            float num=numero.toFloat();
+
+            if(ui->radioButton->isChecked()){
+                dataIng.push_back(num);
+                ui->lineEdit->setText("");
+            }
+            else{
+                dataPre.push_back(num);
+                ui->lineEdit->setText("");
+            }
+
         }
+
     }
 }
 
