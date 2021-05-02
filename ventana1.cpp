@@ -7,11 +7,21 @@ Ventana1::Ventana1(QWidget *parent) :
     ui(new Ui::Ventana1)
 {
     ui->setupUi(this);
-    //Posibilidad de generar unos numeros aleatorios para asignar estos errores
-    ui->lineEdit->setText("Algo fallo");
-    ui->lineEdit_2->setText("Todo correcto");
-    ui->lineEdit_3->setText("Algo fallo");
-    ui->lineEdit_4->setText("Todo correcto");
+
+    QString fallo1="Todo correcto", fallo2="Todo correcto", fallo3="Todo correcto", fallo4="Todo correcto";
+    int num_f;
+
+    srand(time(NULL));
+    num_f = rand()%6;
+    if(num_f==1){fallo1 = "Algo falló";}
+    if(num_f<=3){fallo2 = "Algo falló";}
+    if(num_f==3){fallo3 = "Algo falló";}
+    if(num_f>=4){fallo4 = "Algo falló";}
+
+    ui->lineEdit->setText(fallo1);
+    ui->lineEdit_2->setText(fallo2);
+    ui->lineEdit_3->setText(fallo3);
+    ui->lineEdit_4->setText(fallo4);
 
 }
 

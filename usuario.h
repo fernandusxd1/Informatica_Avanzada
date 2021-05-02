@@ -34,9 +34,9 @@ class Ingeniero : public OperarioJefe{
     Ingeniero();
     ~Ingeniero();
     bool acceder(QString,QString);
-    float media();
-    float varianza();
-    QString show_data();
+    float media(QVector<float>);
+    float varianza(QVector<float>);
+    QString show_data(bool);
     friend class Admin;
 };
 

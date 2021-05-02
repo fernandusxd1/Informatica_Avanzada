@@ -53,17 +53,24 @@ void Login::on_Boton_Login_clicked()
         }
     }
     else{ // Ventana de operario
-        Ope op;
-        time_t tiempo = time(0);
-        struct tm *tlocal = localtime(&tiempo);
-        char str_time[128];
-        strftime(str_time,128,"%d/%m/%y %H:%M:%S",tlocal);
+        if (ui->LE_User->text()!=""){
+            time_t tiempo = time(0);
+            struct tm *tlocal = localtime(&tiempo);
+            char str_time[128];
+            strftime(str_time,128,"%d/%m/%y %H:%M:%S",tlocal);
 
-        QString fecha = QString::fromStdString(str_time);
-        QString nombre = ui->LE_User->text();
-        adm.insert_contop(nombre,fecha);
-        op.exec();
-        close();
+            QString fecha = QString::fromStdString(str_time);
+            QString nombre = ui->LE_User->text();
+
+            adm.insert_contop(nombre,fecha);
+            Ope op;
+            op.exec();
+            close();
+        }
+        else{
+            QMessageBox::information(this, "Aviso", "Inserte un nombre.");
+        }
+
     }
 }
 

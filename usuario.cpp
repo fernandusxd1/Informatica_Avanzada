@@ -2,6 +2,7 @@
 #include <math.h>
 
 extern QVector<float> dataIng;
+extern QVector<float> dataPre;
 
 //Métodos de la clase Operario
 Operario::Operario(){ //Constructor
@@ -40,44 +41,56 @@ Ingeniero::~Ingeniero(){ //Destructor
 
 }
 
-float Ingeniero::media(){
+float Ingeniero::media(QVector<float> vector){
     int i;
-    int suma=0,tamano=0;
+    float suma=0,tamano=0;
     float med;
-    for (i=0;i<dataIng.length();i++){
-        suma=suma+dataIng[i];
+    for (i=0;i<vector.length();i++){
+        suma=suma+vector[i];
         tamano=tamano+1;
     }
     med=suma/tamano;
     return med;
 }
-float Ingeniero::varianza(){
+float Ingeniero::varianza(QVector<float> vector){
     int i;
     int j;
     float var;
-    int suma=0,tamano=0;
+    int suma=0;
     float med;
-    for (i=0;i<dataIng.length();i++){
+    med = Ingeniero::media(vector);
+    /*for (i=0;i<dataIng.length();i++){
         suma=suma+dataIng[i];
         tamano=tamano+1;
     }
-    med=suma/tamano;
+    med=suma/tamano;*/
 
     float sumat=0;
-    for (j=0;j<dataIng.length();j++){
-        sumat=sumat+pow(dataIng[j]-med,2);
+    int tamano=0;
+    for (j=0;j<vector.length();j++){
+        sumat=sumat+pow(vector[j]-med,2);
+        tamano=tamano+1;
     }
     var=sumat/tamano;
     return var;
 }
 
-QString Ingeniero::show_data(){
+QString Ingeniero::show_data(bool valor){
     QString mostrar="";
     QVector<float>::iterator i;
-    for(i=dataIng.begin();i!=dataIng.end();i++){
-        QString numero=QString::number(*i);
-        mostrar=mostrar + numero + "\n";
+    if(valor==true){
+        for(i=dataIng.begin();i!=dataIng.end();i++){
+            QString numero=QString::number(*i);
+            mostrar=mostrar + numero + "\n";
+        }
     }
+    else{
+        for(i=dataPre.begin();i!=dataPre.end();i++){
+            QString numero=QString::number(*i);
+            mostrar=mostrar + numero + "\n";
+        }
+    }
+
     return mostrar;
 }
 

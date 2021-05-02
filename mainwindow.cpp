@@ -8,16 +8,13 @@
 Ingeniero ing;
 Admin adm;
 QVector<float> dataIng;
+QVector<float> dataPre;
 int aux_op_ing=0;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    dataIng.push_back(90);
-    dataIng.push_back(81);
-    dataIng.push_back(76);
-    dataIng.push_back(98);
     ui->setupUi(this);
 }
 
