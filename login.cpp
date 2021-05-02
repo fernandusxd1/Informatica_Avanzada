@@ -6,6 +6,7 @@
 #include "ingenieria.h"
 #include <QQueue>
 #include "administrador.h"
+#include "ope.h"
 
 using namespace std;
 
@@ -52,6 +53,7 @@ void Login::on_Boton_Login_clicked()
         }
     }
     else{ // Ventana de operario
+        Ope op;
         time_t tiempo = time(0);
         struct tm *tlocal = localtime(&tiempo);
         char str_time[128];
@@ -60,6 +62,7 @@ void Login::on_Boton_Login_clicked()
         QString fecha = QString::fromStdString(str_time);
         QString nombre = ui->LE_User->text();
         adm.insert_contop(nombre,fecha);
+        op.exec();
         close();
     }
 }
