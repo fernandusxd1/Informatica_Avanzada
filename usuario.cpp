@@ -53,10 +53,10 @@ float Ingeniero::media(QVector<float> vector){
     return med;
 }
 float Ingeniero::varianza(QVector<float> vector){
-    int i;
+    //int i;
     int j;
     float var;
-    int suma=0;
+    //int suma=0;
     float med;
     med = Ingeniero::media(vector);
     /*for (i=0;i<dataIng.length();i++){
